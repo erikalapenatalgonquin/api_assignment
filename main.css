@@ -1,0 +1,328 @@
+/********************************
+Filename: main.css
+Author: @erikaPerley
+Description: API Project
+Date: November 29, 2018
+*********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Warnes');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1rem;
+    font-family: Warnes, "Georgia", sans-serif;
+    padding: 20px 20px 20px 20px;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 18rem;
+}
+
+.panel-title {
+    color: aliceblue;
+    font-family: 'Warnes';
+    font-weight: 20px;
+    padding-bottom: 5rem;
+}
+
+.message {
+    color: aliceblue;
+    font-family: Warnes;
+}
+
+.search-container {
+    position: relative;
+    width: 40vw;
+    min-width: 250px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+}
+
+#search-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(600%);
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movieCard {
+    width: 50rem;
+    height: auto;
+    margin: 1rem auto;
+    background-color: lightgrey;
+    font-family: Montserrat, "Georgia", sans-serif;
+}
+
+.imageSection {
+    float: left;
+    width: 12rem;
+    height: 17rem;
+    margin-right: 1rem;
+    overflow: hidden;
+    font-family: Montserrat, "Georgia", sans-serif;
+}
+
+.imageSection > img {
+    height: ;
+    margin-right: 1rem;
+    font-family: Montserrat, "Georgia", sans-serif;
+    font-size: 16px;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.movie-title {
+    font-size: 2rem;
+    font-family: Warnes;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.movie-release-date {}
+
+.movie-vote-average {}
+
+.movie-overview {}
+
+.movie-details .move-title {}
+
+main {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    padding: 3rem 0.2rem 02rem 0.2rem;
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/img/pulp_5.jpeg");
+    background-repeat: no-repeat;
+    overflow: hidden scroll;
+    position: fixed;
+}
+
+body {
+    font-size: 1.0rem;
+    font-family: Montserrat, "Georgia", sans-serif;
+    font-size: 16px;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.input-group {
+    margin: 15rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#search {
+    margin-left: -4rem;
+    font-family: Montserrat, "Georgia", sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 13rem;
+    font-size: 16px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+#search-input {
+    left: 100px;
+    width: calc(100% - 2px);
+    width: 150%;
+    height: 5rem;
+    font-size: 1.2rem;
+    color: red;
+    text-align: left;
+    padding-left: 3px;
+    z-index: 20;
+    text-overflow: clip;
+    font-family: Warnes;
+}
+
+#search-input:focus {
+    width: calc(110% - 2px);
+    transition: 1s;
+}
+
+
+
+#search-button {
+    height: 2.6rem;
+    width: 2.6rem;
+    cursor: pointer;
+}
+
+.attribution > img {
+    width: 250px;
+    z-index: 10;
+    position: fixed;
+    padding-top: 25rem;
+    padding-left: 3rem;
+}
+
+.spike-lee-joint > p {
+    font-family: Warnes;
+    color: aliceblue;
+    position: fixed;
+    padding-top: 30rem;
+    padding-left: 3rem;
+    font-weight: 3rem;
+}
+
+@keyframes slide {
+    from {
+        left: 10%;
+        opacity: 1;
+    }
+
+    to {
+        left: 90%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slide {
+    from {
+        left: 10%;
+        opacity: 1;
+    }
+
+    to {
+        left: 90%;
+        opacity: 0;
+    }
+}
+
+#search_input {
+    position: absolute;
+    left: 10%;
+}
+
+
+/*MODAL WINDOW*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+#modalButton {
+    right: 15rem;
+
+}
+
+.modal {
+    position: fixed;
+    width: 500px;
+    height: 280px;
+    z-index: 200;
+    top: calc((100% - 280px)/2);
+    left: calc((100% - 500px)/2);
+    font-family: Monserrat, sans-serif;
+    line-height: 1;
+    color: #234;
+    background-color: #eee;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.off {
+    transform: translateY(-400%);
+}
+
+.on {
+    transform: translateY(0);
+}
+
+.cancelButton,
+.saveButton {
+    width: 120px;
+    position: absolute;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 0.25rem 2rem;
+    font-size: 1rem;
+}
+
+.saveButton {
+    bottom: 1rem;
+    right: 4rem;
+}
+
+.cancelButton {
+    bottom: 1rem;
+    left: 4rem;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.modal-radio {
+    text-align: center;
+    margin-top: 4rem;
+}
