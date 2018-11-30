@@ -1,0 +1,92 @@
+<!--
+Filename: index.html
+Author: @erikaPerley
+Description: API Project
+Date: November 29, 2018
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my Pulp Fiction theme Movie DB search site!</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <!--        <link rel="stylesheet" href="spa.css">-->
+</head>
+
+<body>
+    <main>
+        <!--
+    API version 3 documentation:
+    https://developers.themoviedb.org/3/search
+    https://developers.themoviedb.org/3/movies
+-->
+
+        <div class="panel-title">Search the Movie Database <br><br><br><br>for nothing, honey!</div>
+
+        <header>
+
+
+            <div class="search-container">
+                <div class="searchButtonDiv">
+                    <img id="search-button" alt="Search" title="Search" src="/img/magnifying-glass.svg" />
+                </div>
+
+                <div id="modalButton">
+                    <img id="modal-button" alt="Modal" title="Modal" src="/img/pulp_3.jpg" />
+                </div>
+
+                <input type="text" id="search-input" placeholder="Give me the Royale with cheese!" />
+            </div>
+        </header>
+
+        <div class="page" id="search-results">
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+
+        <div class="page" id="recommend-results">
+            <section class="title"></section>
+            <section class="content flex-container"></section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="attribution">
+            <img src="/img/powered-by.svg" alt="Movie DB logo" title="Logo" data-src="/img/powered-by.svg" />
+            <div class="spike-lee-joint">
+                <p>(c) an Erika & Movie DB joint</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="overlay hide">&nbsp;</div>
+
+    <div class="modal off">
+        <div class="modal-header">
+            <h2>Choose your Poison</h2>
+        </div>
+        <div class="modal-radio">
+            <input type="radio" name="Movies" value="movie" id="movie" checked>
+            <label for="blue">Movie</label>
+
+            <input type="radio" name="TV" value="TV" id="TV" checked>
+            <label for="TV">TV</label>
+
+        </div>
+        <button class="cancelButton">Cancel</button>
+        <button class="saveButton">Save</button>
+
+    </div>
+
+    <script src="/js/iconic.min.js"></script>
+    <script src="/js/key.js"></script>
+    <script src="/js/main.js"></script>
+
+
+</body>
+</html>
